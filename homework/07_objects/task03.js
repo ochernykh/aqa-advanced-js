@@ -1,13 +1,13 @@
 const car1 = {
-  brand: "Toyota",
-  model: "Corolla",
+  brand: 'Toyota',
+  model: 'Corolla',
   year: 2020,
 };
 
 const car2 = {
-  brand: "Ford",
-  model: "Focus",
-  owner: "Олександр",
+  brand: 'Ford',
+  model: 'Focus',
+  owner: 'Олександр',
 };
 
 const car3 = {

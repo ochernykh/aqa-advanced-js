@@ -11,6 +11,6 @@ const mergedWithConcat = firstArray.concat(secondArray);
 const mergedWithPush = [...firstArray];
 mergedWithPush.push(...secondArray);
 
-console.log(mergedWithSpread);  // [1, 2, 3, 4, 5, 6]
-console.log(mergedWithConcat);  // [1, 2, 3, 4, 5, 6]
-console.log(mergedWithPush);    // [1, 2, 3, 4, 5, 6]
+console.log(mergedWithSpread); // [1, 2, 3, 4, 5, 6]
+console.log(mergedWithConcat); // [1, 2, 3, 4, 5, 6]
+console.log(mergedWithPush); // [1, 2, 3, 4, 5, 6]

@@ -1,8 +1,8 @@
-const ApiService = require("./ApiService");
+const ApiService = require('./ApiService');
 
 class TodoService extends ApiService {
   async getTodo() {
-    return this.fetchJson("https://jsonplaceholder.typicode.com/todos/1");
+    return this.fetchJson('https://jsonplaceholder.typicode.com/todos/1');
   }
 }
 

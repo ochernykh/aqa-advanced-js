@@ -1,4 +1,4 @@
-const Book = require("./Book");
+const Book = require('./Book');
 
 class EBook extends Book {
   constructor(title, author, year, fileFormat) {
@@ -11,8 +11,8 @@ class EBook extends Book {
   }
 
   set fileFormat(value) {
-    if (typeof value !== "string" || value.trim() === "") {
-      throw new Error("Формат файлу має бути рядком");
+    if (typeof value !== 'string' || value.trim() === '') {
+      throw new Error('Формат файлу має бути рядком');
     }
     this._fileFormat = value;
   }
