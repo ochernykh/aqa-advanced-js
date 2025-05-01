@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .js",
+    "prepare": "echo 'husky prepare skipped manually'"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "repository": {
     "type": "git",
@@ -19,5 +26,11 @@
   "description": "",
   "dependencies": {
     "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.25.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3"
   }
 }

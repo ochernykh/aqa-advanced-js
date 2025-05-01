@@ -1,5 +1,7 @@
 const numbers = [2, -5, 0, 7, -3, 0, 10, -8];
-let positiveCount = 0, negativeCount = 0, zeroCount = 0;
+let positiveCount = 0,
+  negativeCount = 0,
+  zeroCount = 0;
 
 for (const number of numbers) {
   if (number > 0) positiveCount++;

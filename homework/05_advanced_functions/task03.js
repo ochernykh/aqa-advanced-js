@@ -1,9 +1,9 @@
 const divide = (numerator, denominator) => {
-  if (typeof numerator !== "number" || typeof denominator !== "number") {
-    throw new Error("Аргументи повинні бути числами");
+  if (typeof numerator !== 'number' || typeof denominator !== 'number') {
+    throw new Error('Аргументи повинні бути числами');
   }
   if (denominator === 0) {
-    throw new Error("Ділення на нуль неможливе");
+    throw new Error('Ділення на нуль неможливе');
   }
 
   return numerator / denominator;
@@ -12,7 +12,7 @@ const divide = (numerator, denominator) => {
 const testCases = [
   [10, 2],
   [5, 0],
-  [8, "два"],
+  [8, 'два'],
   ["п'ять", 2],
 ];
 
@@ -27,7 +27,7 @@ const testDivide = (cases) => {
     } catch (error) {
       console.error(`Помилка: ${error.message}`);
     } finally {
-      console.log("Робота завершена\n");
+      console.log('Робота завершена\n');
     }
   }
 };

@@ -18,22 +18,22 @@ class Book {
 
   // Сеттери з валідацією
   set title(value) {
-    if (typeof value !== "string" || value.trim() === "") {
-      throw new Error("Назва не має бути непорожнім рядком");
+    if (typeof value !== 'string' || value.trim() === '') {
+      throw new Error('Назва не має бути непорожнім рядком');
     }
     this._title = value;
   }
 
   set author(value) {
-    if (typeof value !== "string" || value.trim() === "") {
-      throw new Error("Автор не має бути порожнім рядком");
+    if (typeof value !== 'string' || value.trim() === '') {
+      throw new Error('Автор не має бути порожнім рядком');
     }
     this._author = value;
   }
 
   set year(value) {
     if (!Number.isInteger(value)) {
-      throw new Error("Рік має бути цілим числом");
+      throw new Error('Рік має бути цілим числом');
     }
     this._year = value;
   }
